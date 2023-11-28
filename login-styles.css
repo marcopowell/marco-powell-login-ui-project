@@ -1,8 +1,8 @@
 /******** Viewports larger than 1200px (XL and XXL devices) **********/
 
 body {
-    background-color: rgb(122, 110, 110);
-    height: 1200px;
+    background-color: rgb(88, 76, 76);
+    height: 900px;
     font-family: 'Mukta', sans-serif;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -16,16 +16,14 @@ h1 {
 
 h2 {
     color: white;
-    background-color: blueviolet;
     font-family: 'Mukta', sans-serif;
+    -webkit-text-stroke:1px black;
     font-weight: 800;
     font-size: 36px;
 }
 
 h3 {
-    color: gray;
-    background-color: aquamarine;
-    
+    color: rgb(85, 11, 11);
 }
 
 p {
@@ -43,7 +41,6 @@ p {
 }
 
 .container-image {
-    background-color: rgb(23, 104, 176);
     height: inherit;
     width: 50%;
     background-image: url("images/mountain-2.jpg");
@@ -64,7 +61,6 @@ p {
 }
 
 .top-content {
-    background-color: rgb(80, 172, 84);
     height: 45%;
     width: 90%;
     display: flex;
@@ -74,7 +70,6 @@ p {
 }
 
 .login-card {
-    background-color: rgb(70, 197, 197);
     height: 15%;
     width: 90%;
     display: flex;
@@ -86,7 +81,6 @@ p {
 }
 
 .bottom-content {
-    background-color: rgb(147, 158, 167);
     height: 40%;
     width: 90%;
     display: flex;
@@ -120,7 +114,6 @@ p {
 
 .remember-me {
     width: inherit;
-
 }
 
 #vertical-line {
@@ -131,29 +124,202 @@ p {
 /******** Viewports betweem 768px and 1200px (L and XL devices) **********/
 
 @media (min-width: 768px) and (max-width: 1200px){
-    body {
-        background-color: red;
-    };
 
+    .main-container {
+        height: 600px;
+        width: 600px;
+    }
 
+    .container-image {
+        display: none;
+    }
+
+    .container-login-form { 
+        width: 100%;
+        border-radius: 15px;
+        background-image: url("images/mountain-2.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .login-card {
+        gap: 15px;
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: row;
+    }
+     
+    .bottom-content {
+        background-color: rgb(233, 216, 187);
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 35px;
+        margin: 0px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    
+    .input-box {
+        width: 170px;
+    }
+    
+    #login-btn {
+        width: 90px;
+    }
+    
+    .label-text {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .remember-me {
+        color: white;
+    }
 }
 
 /******** Viewports betweem 576px and 767px (S and M devices) **********/
 
 @media (min-width: 576px) and (max-width: 767px){
-    body {
-        background-color: blue;
-    };
+    
+    h3 {
+        color: white;
+        font-size: 16px;
+    }
 
+    .main-container {
+        height: 700px;
+        width: 450px;
+        min-width: 300px;
+    }
 
+    .container-image {
+        display: none;
+    }
+
+    .container-login-form { 
+        width: 100%;
+        border-radius: 10px;
+        background-image: url("images/mountain-2.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .login-card {
+        height: 30%;
+        gap: 15px;
+        padding-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+     
+    .bottom-content {
+        background-color: rgb(233, 216, 187);
+        height: 7%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 35px;
+        margin: 0px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    
+    .input-box {
+        width: 200px;
+    }
+    
+    #login-btn {
+        width: 90px;
+    }
+    
+    .label-text {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .remember-me {
+        color: white;
+        width: 120px;
+        padding-top: 10px;
+    }
 }
 
 /******** Viewports less than 575px (XS devices) **********/
 
 @media (max-width: 575px){
-    body {
-        background-color: purple;
-    };
 
+    h3 {
+        color: white;
+        font-size: 16px;
+    }
+
+    .main-container {
+        height: 700px;
+        width: 80vw;
+    }
+
+    .container-image {
+        display: none;
+    }
+
+    .container-login-form { 
+        width: 100%;
+        border-radius: 10px;
+        background-image: url("images/mountain-2.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .login-card {
+        height: 30%;
+        gap: 15px;
+        padding-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+     
+    .bottom-content {
+        background-color: rgb(233, 216, 187);
+        height: 7%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 35px;
+        margin: 0px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
     
+    .input-box {
+        width: 200px;
+    }
+    
+    #login-btn {
+        width: 90px;
+    }
+    
+    .label-text {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .remember-me {
+        color: white;
+        width: 120px;
+        padding-top: 10px;
+    }
 }
