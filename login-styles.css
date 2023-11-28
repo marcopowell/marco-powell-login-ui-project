@@ -37,7 +37,9 @@ p {
     display: flex;
     flex-direction: row;
     border: 3px solid rgb(250, 239, 220);
-    border-radius: 15px;
+    border-radius: 18px;
+    box-shadow: 20px 20px 15px rgb(244, 181, 66, 0.8);
+    
 }
 
 .container-image {
@@ -153,13 +155,13 @@ p {
      
     .bottom-content {
         background-color: rgb(233, 216, 187);
-        height: 10%;
+        height: 13%;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-bottom: 35px;
+        padding-bottom: 5px;
         margin: 0px;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
@@ -222,13 +224,13 @@ p {
      
     .bottom-content {
         background-color: rgb(233, 216, 187);
-        height: 7%;
+        height: 14%;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-bottom: 35px;
+        padding-bottom: 5px;
         margin: 0px;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
@@ -292,7 +294,7 @@ p {
      
     .bottom-content {
         background-color: rgb(233, 216, 187);
-        height: 7%;
+        height: 10%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -315,6 +317,11 @@ p {
     .label-text {
         margin-left: 25px;
         margin-right: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
     }
     
     .remember-me {
