@@ -1,4 +1,159 @@
+/******** Viewports larger than 1200px (XL and XXL devices) **********/
+
 body {
-    background-color: rgb(163, 153, 79);
-    font-family: sans-serif;
+    background-color: rgb(122, 110, 110);
+    height: 1200px;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: white;
+    background-color: blueviolet;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+h3 {
+    color: gray;
+    background-color: aquamarine;
+    
+}
+
+p {
+    color: white;
+}
+
+.main-container {
+    background-color: rgb(2, 21, 37);
+    height: 600px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgb(250, 239, 220);
+    border-radius: 15px;
+}
+
+.container-image {
+    background-color: rgb(23, 104, 176);
+    height: inherit;
+    width: 50%;
+    background-image: url("images/mountain-2.jpg");
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.container-login-form { 
+    background-color: rgb(233, 216, 187);
+    height: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.top-content {
+    background-color: rgb(80, 172, 84);
+    height: 45%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login-card {
+    background-color: rgb(70, 197, 197);
+    height: 15%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bottom-content {
+    background-color: rgb(147, 158, 167);
+    height: 40%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.input-box {
+    width: 140px;
+    height: 35px;
+    border: .7px solid rgb(247, 158, 75);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+#login-btn {
+    background-color: rgb(247, 158, 75);
+    border-radius: 10px;
+    border: .5px solid rgb(247, 158, 75);
+    height: 38px;
+    width: 65px;
+}
+
+.label-text {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.remember-me {
+    width: inherit;
+
+}
+
+#vertical-line {
+    border: .1px solid rgb(99, 99, 99);
+    height: 15px;
+}
+
+/******** Viewports betweem 768px and 1200px (L and XL devices) **********/
+
+@media (min-width: 768px) and (max-width: 1200px){
+    body {
+        background-color: red;
+    };
+
+
+}
+
+/******** Viewports betweem 576px and 767px (S and M devices) **********/
+
+@media (min-width: 576px) and (max-width: 767px){
+    body {
+        background-color: blue;
+    };
+
+
+}
+
+/******** Viewports less than 575px (XS devices) **********/
+
+@media (max-width: 575px){
+    body {
+        background-color: purple;
+    };
+
+    
 }
